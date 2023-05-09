@@ -62,8 +62,10 @@ Syslog display failed password against Linux virtual machine
 ## Phase IV - Remediation & Regulatory Compliance Implementation
 
 ## Phase V - Results & Metrics Comparison
-
-
+![Firewallrule](https://i.imgur.com/cOUAHuU.jpg)
+![Firewallrule](https://i.imgur.com/WZXK54D.jpg)
+![Firewallrule](https://i.imgur.com/YNxOFvV.jpg)
+![Firewallrule](https://i.imgur.com/rQITjvQ.jpg)
 
 ## Reflection
 
