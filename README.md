@@ -58,13 +58,41 @@ Syslog display failed password against Linux virtual machine
 ![Firewallrule](https://i.imgur.com/IsEDYY7.jpg)
 
 ## Phase III - Analysis & Incident Assessment and Response
+In this phase of the project, I assessed several incidents that were generated during the 24 hours of running the insecure environment.  For each incident, I analyzed information about the entities that were responsible for these attacks, such as, IP address, the tactics and techniques they used, the type of attack they performed, the timeline of each attack, and I investigated further into the entity IP address to inspect any related alerts determine whether the incident was a true positive or a false positive.  
+
+![Firewallrule](https://i.imgur.com/MEIisRs.jpg)
+
+![Firewallrule](https://i.imgur.com/m8J3GEt.jpg)
 
 ## Phase IV - Remediation & Regulatory Compliance Implementation
 
+After I finished analyzing these incidents, I took actions to secure this environment.  Security controls I implemented consisted of disabling public access to the virtual machines and blob storage account, I created private endpoints for storage account and virtual machine, an additional network security group was created to protect the subnet, created a NSG rule for virtual machines to only allow traffic from my own IP address source, and private links were enabled to keep key vault safe.  These security protocols were implemented following the NIST 800-53 regulatory compliance standards.  
+
+  - An NSG contains a set of security rules that allow or deny inbound or outbound network traffic based on protocol, source IP address, destination IP address, and port number. This streghten network traffic control, enhance protection of resources, and prevent authorized access to resources.  
+  - A private endpoint is a network interface enforces security by allowing services to be accessed through a private connection.  This ensure access to these resources is only within this private virtual network and prevent traffic from being exposed to the public internet.  
+
 ## Phase V - Results & Metrics Comparison
+Results and metrics of both insecure and secure environments were measured and recorded to determine the effectiveness of implemented security controls.  
+
+## Before Attack World Maps 
+
+This attack world map displays attacks to the MSSQL Server
+
+
 ![Firewallrule](https://i.imgur.com/cOUAHuU.jpg)
+
+
+This attack world map depicts the number of attacks targetted to the Linux virtual machine
+
+
 ![Firewallrule](https://i.imgur.com/WZXK54D.jpg)
+
+This attack world map accentuates how many attacks the Windows virtual machine encountered
 ![Firewallrule](https://i.imgur.com/YNxOFvV.jpg)
+
+
+This attack world world represents the large influx of malicious traffic resulted from insecure environment 
+
 ![Firewallrule](https://i.imgur.com/rQITjvQ.jpg)
 
 ## Reflection
