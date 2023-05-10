@@ -34,12 +34,12 @@ The main objective of this project is to create a honeynet that will allow me to
 - NIST SP 800-61 Revision 2 for Incident Handling Guidance
 
 ## Phase I - Creating The Honeynet 
-In this phase, I created Windows and Linux virtual machines. Afterward, I intentionally configured the firewall and NGS to allow all traffic from all ports. Additionally, I disabled everything in Microsoft Defender Firewall. This created a vulnerable internet-facing environment that will attract attackers.
+I created Windows and Linux virtual machines. Afterward, I intentionally configured the firewall and NGS to allow all traffic from all ports. Additionally, I disabled everything in Microsoft Defender Firewall. This created a vulnerable internet-facing environment that will attract attackers.
 
 ![Firewallrule](https://i.imgur.com/QNfVI72.jpg)
 
 ## Phase II - Simulated Attacks & Logging and Monitoring
-In this phase, simulated attacks were executed using Powershell to manually trigger events. These simulated attacks consist of Brute Force Attempts, Malware(EICAR Test File), AAD Brute Force Success, Privilege Escalation, and Windows Brute Force Success. Afterward, I utilized KQL queries to filter data from different logs to analyze these triggered events and alerts from actual attackers.
+Simulated attacks were executed using Powershell to manually trigger events. These simulated attacks consist of Brute Force Attempts, Malware(EICAR Test File), AAD Brute Force Success, Privilege Escalation, and Windows Brute Force Success. Afterward, I utilized KQL queries to filter data from different logs to analyze these triggered events and alerts from actual attackers.
 
 SignInLogs for invalid username or password event alerts
 
@@ -58,7 +58,7 @@ Syslog display failed password against Linux virtual machine
 ![Syslog](https://i.imgur.com/IsEDYY7.jpg)
 
 ## Phase III - Analysis & Incident Assessment and Response
-In this phase of the project, I assessed several incidents that were generated during the 24 hours of running the insecure environment. For each incident, I analyzed information about the entities that were responsible for these attacks, such as IP address, the tactics, and techniques they used, the type of attack they performed, and the timeline of each attack, and I investigated further into the entity IP address to inspect any related alerts determine whether the incident was a true positive or a false positive.
+I assessed several incidents that were generated during the 24 hours of running the insecure environment. For each incident, I analyzed information about the entities that were responsible for these attacks, such as IP address, the tactics, and techniques they used, the type of attack they performed, and the timeline of each attack, and I investigated further into the entity IP address to inspect any related alerts determine whether the incident was a true positive or a false positive.
 
 ![Incident detail](https://i.imgur.com/MEIisRs.jpg)
 
