@@ -1,6 +1,6 @@
 # Azure-SOC-Honeynet-Project (Live Traffic)
 
-![Cloud Honeynet / SOC](https://i.imgur.com/S6whvfs.png)
+![Cloud Honeynet / SOC](https://i.imgur.com/rj5UWwN.png)
 
 ## Introduction
 This project will consist of creating my very own honeynet on Microsoft Azure that will entice attackers, log and monitor malicious traffic generated from these attacks, perform incident response, and implement hardening controls to secure the environment. 
@@ -11,11 +11,11 @@ The main objective of this project is to create a honeynet that will allow me to
 
 ## Before Hardening
 
-![Before](https://i.imgur.com/VRXMAtr.png)
+![Before](https://i.imgur.com/WVa7UIB.png)
 
 ## After Hardening
 
-![After](https://i.imgur.com/pwJqFZt.png)
+![After](https://i.imgur.com/YHU5fm4.png)
 
 ## Technologies, Regulations, and Azure Components Employed:
 
@@ -30,6 +30,8 @@ The main objective of this project is to create a honeynet that will allow me to
 - Powershell for performing simulated attacks
 - Command Line Interface (CLI) to verify connection to virtual machine
 - Windows Remote Desktop to remotely connect to virtual machines
+- NIST SP 800-53 Revision 4 for Security Controls
+- NIST SP 800-61 Revision 2 for Incident Handling Guidance
 
 ## Phase I - Creating The Honeynet 
 In this phase, I created Windows and Linux virtual machines. Afterward, I intentionally configured the firewall and NGS to allow all traffic from all ports. Additionally, I disabled everything in Microsoft Defender Firewall. This created a vulnerable internet-facing environment that will attract attackers.
@@ -68,7 +70,8 @@ After I finished analyzing these incidents, I took action to secure this environ
 
 - An NSG contains a set of security rules that allow or deny inbound or outbound network traffic based on protocol, source IP address, destination IP address, and port number. This strengthens network traffic control, enhances the protection of resources, and prevents authorized access to resources.
 - A private endpoint is a network interface that enforces security by allowing services to be accessed through a private connection. This ensures access to these resources is only within this private virtual network and prevents traffic from being exposed to the public internet.
-
+- NIST SP 800-53 is a set of guildelines for security controls related to information systems to aide organizations in protecting against security threats or vulnerability.  These guidelines covers access control, incident response, and system and information integrity.  
+- NIST SP 800-61 is a set of guidelines for preparation, detection, analysis, response, and recover from computer security incidents.
 
 ## Phase V - Results & Metrics Comparison
 Results and metrics of both insecure and secure environments were measured and recorded to determine the effectiveness of implemented security controls.  
@@ -91,7 +94,7 @@ This attack world map accentuates how many attacks the Windows virtual machine e
 ![Windows World Map](https://i.imgur.com/YNxOFvV.jpg)
 
 
-This attack world world represents the large influx of malicious traffic resulted from insecure environment 
+This attack world map represents the large influx of malicious traffic resulted from insecure environment 
 
 ![NSG World Map](https://i.imgur.com/rQITjvQ.jpg)
 
@@ -101,12 +104,13 @@ Metrics were collected during the 2023-05-08 at 00:29 AM - 2023-05-09 at 00:29 A
 
 ## After Hardening
 
+Every attack world maps displayed that no new attacks were generated after the environment has been secured during the 24 hours period.  
 
 
-
+![Before Metrics](https://i.imgur.com/Gj3SFT3.jpg)
 
 ## Reflection
 I have learned so much while doing this project. This project has really reinforced the importance of security. It is crucial to have correct security controls and configurations to protect in place your resources. As the before and after metrics highlight the drastic difference between an insecure and a secure environment, firewall rules, private endpoints, and not allowing public internet access need to be implemented to prevent disastrous consequences caused by attacks and unauthorized access to valuable resources.
 
 ## Conclusion
-In this project, I created a honeynet using Microsoft Azure. Afterward, I performed logging and monitoring for any attacks against these virtual machines. Additionally, I analyzed these incidents in further detail to understand tactics, techniques, and procedures being executed by attacks. Lastly, I hardened the environment by enforcing security controls following the regulatory compliance NIST 800-53.
+In this project, I created a honeynet using Microsoft Azure. Afterward, I performed logging and monitoring for any attacks against these virtual machines. Additionally, I analyzed these incidents in further detail to understand tactics, techniques, and procedures being executed by attacks. Lastly, I hardened the environment by enforcing security controls following the regulatory compliance NIST 800-53 and NIST 800-61.
