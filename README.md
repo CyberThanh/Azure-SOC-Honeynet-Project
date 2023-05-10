@@ -104,7 +104,7 @@ Metrics were collected during the 2023-05-08 at 00:29 AM - 2023-05-09 at 00:29 A
 
 ## After Hardening
 
-Every attack world maps displayed that no new attacks were generated after the environment has been secured during the 24 hours period.  
+Attack world maps displayed no results, indicating that there has not been any new attacks after securing the environment.  
 
 
 ![Before Metrics](https://i.imgur.com/Gj3SFT3.jpg)
