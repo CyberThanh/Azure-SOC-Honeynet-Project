@@ -98,7 +98,7 @@ This attack world map represents the large influx of malicious traffic resulted 
 
 ![NSG World Map](https://i.imgur.com/rQITjvQ.jpg)
 
-Metrics were collected during the 2023-05-08 at 00:29 AM - 2023-05-09 at 00:29 AM timeframe
+Metrics were collected during the 2023-05-08 at 21:04 - 2023-05-09 at 21:04 timeframe
 
 ![Before Metrics](https://i.imgur.com/bQAGlBu.jpg)
 
@@ -106,6 +106,7 @@ Metrics were collected during the 2023-05-08 at 00:29 AM - 2023-05-09 at 00:29 A
 
 Attack world maps displayed no results, indicating that there has not been any new attacks after securing the environment.  
 
+Metrics were collected during the 2023-05-09 at 21:04 - 2023-05-10 at 21:04 timeframe
 
 ![Before Metrics](https://i.imgur.com/Gj3SFT3.jpg)
 
