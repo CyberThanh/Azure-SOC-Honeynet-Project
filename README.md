@@ -111,7 +111,7 @@ Metrics were collected during the 2023-05-09 at 21:04 - 2023-05-10 at 21:04 time
 ![Before Metrics](https://i.imgur.com/Gj3SFT3.jpg)
 
 ## Reflection
-I have learned so much while doing this project. This project has really reinforced the importance of security. It is crucial to have correct security controls and configurations to protect in place your resources. As the before and after metrics highlight the drastic difference between an insecure and a secure environment, firewall rules, private endpoints, and not allowing public internet access need to be implemented to prevent disastrous consequences caused by attacks and unauthorized access to valuable resources.
+I have learned so much while doing this project. This project has really reinforced the importance of security. It is crucial to have correct security controls and configurations in place to protect your resources. As the before and after metrics highlight the drastic difference between an insecure and a secure environment.  Firewall rules, private endpoints, and not allowing public internet access need to be implemented to prevent disastrous consequences caused by attacks and unauthorized access to valuable resources.
 
 ## Conclusion
 In this project, I created a honeynet using Microsoft Azure. Afterward, I performed logging and monitoring for any attacks against these virtual machines. Additionally, I analyzed these incidents in further detail to understand tactics, techniques, and procedures being executed by attacks. Lastly, I hardened the environment by enforcing security controls following the regulatory compliance NIST 800-53 and NIST 800-61.
