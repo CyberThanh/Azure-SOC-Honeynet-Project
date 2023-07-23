@@ -6,7 +6,7 @@
 This project will consist of creating my very own honeynet on Microsoft Azure that will entice attackers, log and monitor malicious traffic generated from these attacks, perform incident response, and implement hardening controls to secure the environment. 
 
 ## Objectives
-The main objective of this project is to create a honeynet that will allow me to analyze live cyberattacks, conduct incident response and investigate event alerts, and study attackers to understand their intentions, tactics, techniques, and procedures. The second objective is to transform the unsecure environment into a secure environment by re-configuring the firewall, NGS, implementing Azure Private Links, and administering regulatory compliance, NIST 800-53, and Microsoft Defender for Cloud recommendations.
+The main objective of this project is to create a honeynet that will allow me to analyze live cyberattacks, conduct incident response and investigate event alerts, and study attackers to understand their intentions, tactics, techniques, and procedures. The second objective is to transform the insecure environment into a secure environment by re-configuring the firewall, NGS, implementing Azure Private Links, and administering regulatory compliance, NIST 800-53, and Microsoft Defender for Cloud recommendations.
 
 
 ## Before Hardening
